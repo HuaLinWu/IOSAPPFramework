@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RootNavigationController.h"
 @interface RootViewController : UIViewController
-
+@property(nonatomic,strong,readonly)RootNavigationController *navigationController;
 @end

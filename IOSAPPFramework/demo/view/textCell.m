@@ -9,7 +9,7 @@
 #import "textCell.h"
 #import "viewControllerCellModel.h"
 @interface textCell()
-@property(nonatomic,strong)UILabel *textlabel;
+@property(nonatomic,strong)UITextField *txtField;
 @end
 @implementation textCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -17,8 +17,8 @@
     self =[super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self)
     {
-        self.textlabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width-100, 0, 100, self.frame.size.height)];
-        [self addSubview:self.textlabel];
+        self.txtField = [[UITextField alloc] initWithFrame:CGRectMake(self.frame.size.width-100, 0, 100, self.frame.size.height)];
+        [self addSubview:self.txtField];
       
     }
     return self;
@@ -26,12 +26,13 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.textlabel.frame = CGRectMake(self.frame.size.width-100, 0, 100, self.frame.size.height);
+    self.txtField.frame = CGRectMake(self.frame.size.width-100, 0, 100, self.frame.size.height);
 }
 - (void)setCellDataSource:(id<RootTableViewAdaptorItemBaseProtocol>)cellDataSource
 {
     [super setCellDataSource:cellDataSource];
     viewControllerCellModel*model = (viewControllerCellModel *)cellDataSource;
-    self.textlabel.text = model.name;
+    self.txtField.text = model.name;
+    
 }
 @end

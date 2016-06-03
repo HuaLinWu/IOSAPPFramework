@@ -17,7 +17,10 @@
     self.tableView.scrollsToTop  = YES;
     self.adaptor.tableView = self.tableView;
     self.adaptor.delegate = self;
+    
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x,CGRectGetHeight(self.navigationController.navigationBar.frame), self.tableView.frame.size.width, [UIScreen mainScreen].applicationFrame.size.height- CGRectGetHeight( self.tabBarController.tabBar.frame)-CGRectGetHeight(self.navigationController.navigationBar.frame)+20);
 }
+
 #pragma mark set,get
 - (UITableView *)tableView
 {

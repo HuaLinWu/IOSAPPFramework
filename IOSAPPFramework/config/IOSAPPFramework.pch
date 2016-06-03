@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  IOSAPPFramework
+//
+//  Created by 吴华林 on 16/5/30.
+//  Copyright © 2016年 吴华林. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "NSObject+Category.h"
+#import "NSDate+Category.h"
+#import "NSString+Category.h"
+#import "NSArray+Category.h"
+#import "NSMutableArray+Category.h"
+#import "NSDictionary+Category.h"
+#import "NSMutableDictionary+Category.h"
+#import "NSObject+Category.h"
+#import "Base64.h"
+#endif /* PrefixHeader_pch */

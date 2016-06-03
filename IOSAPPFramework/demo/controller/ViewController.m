@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "viewControllerCellModel.h"
 #import "textCell.h"
+#import "RootAlertView.h"
 @interface ViewController ()
 
 @end
@@ -28,6 +29,27 @@
        [[self.adaptor cellItemArrayForSection:0] addObject:model];
     }
     [self.tableView reloadData];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 100, 100, 100);
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitle:@"点我" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+   
+}
+- (void)buttonClick:(UIButton *)button
+{
+//    RootAlertView *alert = [[RootAlertView alloc] init];
+//    alert.alertViewStyle =  RootAlertViewStyleDefault;
+//    [alert show];
+    ViewController *nextVC = [[ViewController alloc] init];
+    [self.navigationController pushViewController:nextVC  hideBottomBar:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

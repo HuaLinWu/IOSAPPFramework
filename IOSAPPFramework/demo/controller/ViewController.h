@@ -10,6 +10,5 @@
 #import "RootTableViewController.h"
 @interface ViewController : RootTableViewController
 
-
 @end
 

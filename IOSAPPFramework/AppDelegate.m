@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "NSString+Category.h"
+#import "RootTabBarController.h"
+#import "ViewController.h"
+#import "RootNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -15,7 +19,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    ViewController *vc = [[ViewController alloc] init];
+     RootNavigationController *nav = [[RootNavigationController alloc] initWithRootViewController:vc];
+    RootTabBarButton *tabBarButton = [[RootTabBarButton alloc] initWithTitle:@"首页" image:nil selectedImage:nil textColor:[UIColor lightGrayColor] textSelectedColor:[UIColor redColor] viewController:nav];
+   
+    
+    ViewController *vc1 = [[ViewController alloc] init];
+     RootNavigationController *nav1 = [[RootNavigationController alloc] initWithRootViewController:vc1];
+    RootTabBarButton *tabBarButton1 = [[RootTabBarButton alloc] initWithTitle:@"第二页" image:nil selectedImage:nil textColor:[UIColor lightGrayColor] textSelectedColor:[UIColor redColor] viewController:nav1];
+  
+    RootTabBarController *tabbar = [[RootTabBarController alloc] initWitTabBarButton:@[tabBarButton,tabBarButton1 ]];
+     self.window.rootViewController = tabbar ;
+    
+    
+    
+//    ViewController *vc = [[ViewController alloc] init];
+//    RootTabBarButton *tabBarButton = [[RootTabBarButton alloc] initWithTitle:@"首页" image:nil selectedImage:nil textColor:[UIColor lightGrayColor] textSelectedColor:[UIColor redColor] viewController:vc];
+//    ViewController *vc1 = [[ViewController alloc] init];
+//    RootTabBarButton *tabBarButton1 = [[RootTabBarButton alloc] initWithTitle:@"第二页" image:nil selectedImage:nil textColor:[UIColor lightGrayColor] textSelectedColor:[UIColor redColor] viewController:vc1];
+//     RootTabBarController *tabbar = [[RootTabBarController alloc] initWitTabBarButton:@[tabBarButton,tabBarButton1 ]];
+//  
+//     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tabbar];
+//    self.window.rootViewController = nav;
     return YES;
 }
 
