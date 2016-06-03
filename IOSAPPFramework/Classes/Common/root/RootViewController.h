@@ -10,4 +10,9 @@
 #import "RootNavigationController.h"
 @interface RootViewController : UIViewController
 @property(nonatomic,strong,readonly)RootNavigationController *navigationController;
+/**
+ *  初始化导航栏
+ */
+- (void)initNavigationBar;
+
 @end

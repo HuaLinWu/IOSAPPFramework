@@ -18,7 +18,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapEvent:)];
     [self.view addGestureRecognizer:tapGestureRecognizer];
-   
+    //初始化导航栏
+    [self initNavigationBar];
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -32,8 +33,16 @@
     [super viewWillDisappear:animated];
     //移除键盘的通知
     [[NSNotificationCenter defaultCenter] removeObserver:self];
- 
+    
 }
+#pragma mark  初始化导航栏
+- (void)initNavigationBar
+{
+    UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] init];
+    backBarButtonItem.title=@"返回";
+    self.navigationItem.backBarButtonItem = backBarButtonItem;
+}
+
 #pragma mark tapEvent
 - (void)tapEvent:(UITapGestureRecognizer *)tapGestureRecognizer
 {
