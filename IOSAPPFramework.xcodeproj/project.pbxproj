@@ -21,6 +21,12 @@
 		530586EF1CF6D48300D7D8E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 530586EA1CF6D48300D7D8E6 /* ViewController.m */; };
 		530586F01CF6D48300D7D8E6 /* textCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 530586EE1CF6D48300D7D8E6 /* textCell.m */; };
 		530586F31CF6D69F00D7D8E6 /* viewControllerCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 530586F21CF6D69F00D7D8E6 /* viewControllerCellModel.m */; };
+		5344DAE71D06DC96001E424E /* NavigationWebURLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAD81D06DC96001E424E /* NavigationWebURLHandle.m */; };
+		5344DAE81D06DC96001E424E /* RootWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DADA1D06DC96001E424E /* RootWebViewController.m */; };
+		5344DAEA1D06DC96001E424E /* NavigationViewURLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAE21D06DC96001E424E /* NavigationViewURLHandle.m */; };
+		5344DAEB1D06DC96001E424E /* OtherURLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAE31D06DC96001E424E /* OtherURLHandle.m */; };
+		5344DAED1D06DC96001E424E /* RootBaseNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAE61D06DC96001E424E /* RootBaseNavigator.m */; };
+		5344DAF11D06DD53001E424E /* ViewMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5344DAF01D06DD53001E424E /* ViewMap.plist */; };
 		53DCDE271CFB41470015BA78 /* NSDictionary_Swizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DCDE261CFB41470015BA78 /* NSDictionary_Swizzing.m */; };
 		53DD64221CFC62CF006B41AD /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD64191CFC62CF006B41AD /* NSArray+Category.m */; };
 		53DD64231CFC62CF006B41AD /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD641C1CFC62CF006B41AD /* NSDictionary+Category.m */; };
@@ -64,6 +70,19 @@
 		530586EE1CF6D48300D7D8E6 /* textCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textCell.m; sourceTree = "<group>"; };
 		530586F11CF6D69F00D7D8E6 /* viewControllerCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewControllerCellModel.h; sourceTree = "<group>"; };
 		530586F21CF6D69F00D7D8E6 /* viewControllerCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewControllerCellModel.m; sourceTree = "<group>"; };
+		5344DAD81D06DC96001E424E /* NavigationWebURLHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationWebURLHandle.m; sourceTree = "<group>"; };
+		5344DAD91D06DC96001E424E /* RootWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootWebViewController.h; sourceTree = "<group>"; };
+		5344DADA1D06DC96001E424E /* RootWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWebViewController.m; sourceTree = "<group>"; };
+		5344DADD1D06DC96001E424E /* RootBaseNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootBaseNavigator.h; sourceTree = "<group>"; };
+		5344DADE1D06DC96001E424E /* NavigationWebURLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationWebURLHandle.h; sourceTree = "<group>"; };
+		5344DADF1D06DC96001E424E /* OtherURLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherURLHandle.h; sourceTree = "<group>"; };
+		5344DAE01D06DC96001E424E /* NavigationViewURLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewURLHandle.h; sourceTree = "<group>"; };
+		5344DAE11D06DC96001E424E /* RootURLHandleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootURLHandleProtocol.h; sourceTree = "<group>"; };
+		5344DAE21D06DC96001E424E /* NavigationViewURLHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewURLHandle.m; sourceTree = "<group>"; };
+		5344DAE31D06DC96001E424E /* OtherURLHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherURLHandle.m; sourceTree = "<group>"; };
+		5344DAE61D06DC96001E424E /* RootBaseNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootBaseNavigator.m; sourceTree = "<group>"; };
+		5344DAEF1D06DD53001E424E /* ViewMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMap.h; sourceTree = "<group>"; };
+		5344DAF01D06DD53001E424E /* ViewMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewMap.plist; sourceTree = "<group>"; };
 		53DCDE251CFB41470015BA78 /* NSDictionary_Swizzing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_Swizzing.h; sourceTree = "<group>"; };
 		53DCDE261CFB41470015BA78 /* NSDictionary_Swizzing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_Swizzing.m; sourceTree = "<group>"; };
 		53DD64131CFC465A006B41AD /* IOSAPPFramework.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAPPFramework.pch; sourceTree = "<group>"; };
@@ -170,6 +189,7 @@
 		530586C61CF5A21C00D7D8E6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5344DAEE1D06DD53001E424E /* ViewMap */,
 				53DD64821CFFE3D6006B41AD /* Navgation */,
 				53DD64811CFFE3BE006B41AD /* tabbar */,
 				53DD647C1CFFE377006B41AD /* RootAlert */,
@@ -267,6 +287,15 @@
 				530586EE1CF6D48300D7D8E6 /* textCell.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		5344DAEE1D06DD53001E424E /* ViewMap */ = {
+			isa = PBXGroup;
+			children = (
+				5344DAEF1D06DD53001E424E /* ViewMap.h */,
+				5344DAF01D06DD53001E424E /* ViewMap.plist */,
+			);
+			path = ViewMap;
 			sourceTree = "<group>";
 		};
 		53DCDE1F1CFB34CC0015BA78 /* Category */ = {
@@ -397,8 +426,19 @@
 		53DD64821CFFE3D6006B41AD /* Navgation */ = {
 			isa = PBXGroup;
 			children = (
+				5344DADD1D06DC96001E424E /* RootBaseNavigator.h */,
+				5344DAE61D06DC96001E424E /* RootBaseNavigator.m */,
 				53DD64861D003990006B41AD /* RootNavigationController.h */,
 				53DD64871D003990006B41AD /* RootNavigationController.m */,
+				5344DAE11D06DC96001E424E /* RootURLHandleProtocol.h */,
+				5344DAD91D06DC96001E424E /* RootWebViewController.h */,
+				5344DADA1D06DC96001E424E /* RootWebViewController.m */,
+				5344DADE1D06DC96001E424E /* NavigationWebURLHandle.h */,
+				5344DAD81D06DC96001E424E /* NavigationWebURLHandle.m */,
+				5344DAE01D06DC96001E424E /* NavigationViewURLHandle.h */,
+				5344DAE21D06DC96001E424E /* NavigationViewURLHandle.m */,
+				5344DADF1D06DC96001E424E /* OtherURLHandle.h */,
+				5344DAE31D06DC96001E424E /* OtherURLHandle.m */,
 			);
 			path = Navgation;
 			sourceTree = "<group>";
@@ -461,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5344DAF11D06DD53001E424E /* ViewMap.plist in Resources */,
 				530586A51CED5A2F00D7D8E6 /* LaunchScreen.storyboard in Resources */,
 				530586A21CED5A2F00D7D8E6 /* Assets.xcassets in Resources */,
 				5305869D1CED5A2F00D7D8E6 /* Main.storyboard in Resources */,
@@ -476,9 +517,11 @@
 			files = (
 				530586971CED5A2F00D7D8E6 /* AppDelegate.m in Sources */,
 				53DD646C1CFEC5AD006B41AD /* UIViewController+Keyboard.m in Sources */,
+				5344DAEB1D06DC96001E424E /* OtherURLHandle.m in Sources */,
 				530586D71CF688C800D7D8E6 /* RootTableViewCell.m in Sources */,
 				530586CB1CF5A31100D7D8E6 /* RootViewController.m in Sources */,
 				53DD64241CFC62CF006B41AD /* NSMutableDictionary+Category.m in Sources */,
+				5344DAEA1D06DC96001E424E /* NavigationViewURLHandle.m in Sources */,
 				530586D21CF5A44500D7D8E6 /* RootPlainTableViewAdaptor.m in Sources */,
 				530586EF1CF6D48300D7D8E6 /* ViewController.m in Sources */,
 				530586F01CF6D48300D7D8E6 /* textCell.m in Sources */,
@@ -494,8 +537,11 @@
 				53DD64231CFC62CF006B41AD /* NSDictionary+Category.m in Sources */,
 				530586E51CF6D25F00D7D8E6 /* CellRootDataModel.m in Sources */,
 				530586CE1CF5A34000D7D8E6 /* RootTableViewController.m in Sources */,
+				5344DAED1D06DC96001E424E /* RootBaseNavigator.m in Sources */,
 				530586941CED5A2F00D7D8E6 /* main.m in Sources */,
+				5344DAE81D06DC96001E424E /* RootWebViewController.m in Sources */,
 				53DD64851CFFE4C0006B41AD /* RootTabBarController.m in Sources */,
+				5344DAE71D06DC96001E424E /* NavigationWebURLHandle.m in Sources */,
 				53DD64801CFFE377006B41AD /* RootAlertView.m in Sources */,
 				53DD64881D003990006B41AD /* RootNavigationController.m in Sources */,
 				530586F31CF6D69F00D7D8E6 /* viewControllerCellModel.m in Sources */,
