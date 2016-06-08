@@ -2,8 +2,8 @@
 //  NavigationViewURLHandle.m
 //  IOSAPPFramework
 //
-//  Created by 吴华林(平安好房技术中心产品研发部IOS研发团队) on 16/6/7.
-//  Copyright © 2016年 吴华林(平安好房技术中心产品研发部IOS研发团队). All rights reserved.
+//  Created by 吴华林 on 16/6/7.
+//  Copyright © 2016年 吴华林. All rights reserved.
 //
 
 #import "NavigationViewURLHandle.h"
@@ -12,9 +12,10 @@
 - (BOOL)openURL:(NSString *)url
 {
     //先判断是否内否处理url，能处理就处理，不能处理就交给下一个节点
-    if([self canHandleURL:url])
+    NSURL *tempUrl = [NSURL URLWithString:url];
+    if([self canHandleURL:tempUrl])
     {
-        [self handleURL:url];
+        [self handleURL:tempUrl];
         return YES;
     }
     else
@@ -29,12 +30,40 @@
         }
     }
 }
-- (BOOL)canHandleURL:(NSString *)url
+- (BOOL)canHandleURL:(NSURL *)url
 {
+   
+    if([url.scheme caseInsensitiveCompare:NavHttpScheme])
+    {
+        return YES;
+    }
     return NO;
 }
-- (void)handleURL:(NSString *)url
+- (void)handleURL:(NSURL *)url
 {
+    NSString *queryStr = url.query;
+    NSString *navViewIdentifier = nil;
+    NSString *navViewArgument = nil;
+    NSArray  *parameterStringArray = [queryStr componentsSeparatedByString:@"&"];
+    for(int i=0;i<parameterStringArray.count;i++)
+    {
+        NSString *parameterString = parameterStringArray[i];
+        NSArray *keyAndValueArray = [parameterString componentsSeparatedByString:@"="];
+        if(keyAndValueArray.count > 1)
+        {
+            NSString *key   = keyAndValueArray[0];
+            NSString *value = keyAndValueArray[1];
+            if([key caseInsensitiveCompare:NavURLViewIdentifierArgument])
+            {
+                //页面的唯一标示
+                navViewIdentifier = value;
+            }
+            else if ([key caseInsensitiveCompare:NavURLViewArgument])
+            {
+                navViewArgument = value;
+            }
+        }
+    }
     
 }
 @end
