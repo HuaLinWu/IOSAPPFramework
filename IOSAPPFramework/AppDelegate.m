@@ -11,6 +11,7 @@
 #import "RootTabBarController.h"
 #import "ViewController.h"
 #import "RootNavigationController.h"
+#import "ViewModel.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,8 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
     ViewController *vc = [[ViewController alloc] init];
      RootNavigationController *nav = [[RootNavigationController alloc] initWithRootViewController:vc];
     RootTabBarButton *tabBarButton = [[RootTabBarButton alloc] initWithTitle:@"首页" image:nil selectedImage:nil textColor:[UIColor lightGrayColor] textSelectedColor:[UIColor redColor] viewController:nav];
