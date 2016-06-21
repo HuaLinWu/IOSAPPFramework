@@ -16,22 +16,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.webView.frame = CGRectMake(self.webView.frame.origin.x,CGRectGetHeight(self.navigationController.navigationBar.frame), self.webView.frame.size.width, [UIScreen mainScreen].applicationFrame.size.height- CGRectGetHeight( self.tabBarController.tabBar.frame)-CGRectGetHeight(self.navigationController.navigationBar.frame)+20);
+    [self.view addSubview:self.webView];
     //加载网页
     [self.webView loadRequest:self.urlRequest];
-
 }
 
 - (void)initNavigationBar
 {
     [super initNavigationBar];
 }
+
 #pragma mark set/get
 - (UIWebView *)webView
 {
     if(!_webView)
     {
         _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        _webView.allowsInlineMediaPlayback = YES;
+        
     }
     return _webView;
 }

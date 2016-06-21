@@ -10,6 +10,7 @@
 #import "viewControllerCellModel.h"
 #import "textCell.h"
 #import "RootAlertView.h"
+#import "RootWebViewController.h"
 @interface ViewController ()
 
 @end
@@ -48,8 +49,11 @@
 //    RootAlertView *alert = [[RootAlertView alloc] init];
 //    alert.alertViewStyle =  RootAlertViewStyleDefault;
 //    [alert show];
-    ViewController *nextVC = [[ViewController alloc] init];
-    [self.navigationController pushViewController:nextVC  hideBottomBar:YES animated:YES];
+//    ViewController *nextVC = [[ViewController alloc] init];
+//    [self.navigationController pushViewController:nextVC  hideBottomBar:YES animated:YES];
+    RootWebViewController *nextVC = [[ RootWebViewController alloc] init];
+    nextVC.urlStr = @"http://www.baidu.com";
+    [self.navigationController pushViewController:nextVC hideBottomBar:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
