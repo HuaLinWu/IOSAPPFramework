@@ -7,8 +7,9 @@
 //
 
 #import "RootWebViewController.h"
+#import "UIWebView+NSURLCache.h"
 @interface RootWebViewController()
-@property(nonatomic,strong)UIWebView *webView;
+@property(nonatomic,strong)UIWebView_cache *webView;
 @property(nonatomic,strong)NSURLRequest *urlRequest;
 @property(nonatomic,strong)NSURL *url;
 @end
@@ -31,7 +32,7 @@
 {
     if(!_webView)
     {
-        _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        _webView = [[UIWebView_cache alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         _webView.allowsInlineMediaPlayback = YES;
         
     }

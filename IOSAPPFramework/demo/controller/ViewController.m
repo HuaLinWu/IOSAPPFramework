@@ -11,6 +11,8 @@
 #import "textCell.h"
 #import "RootAlertView.h"
 #import "RootWebViewController.h"
+#import "UIWebView+NSURLCache.h"
+#import <objc/runtime.h>
 @interface ViewController ()
 
 @end

@@ -22,6 +22,7 @@
 		530586F01CF6D48300D7D8E6 /* textCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 530586EE1CF6D48300D7D8E6 /* textCell.m */; };
 		530586F31CF6D69F00D7D8E6 /* viewControllerCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 530586F21CF6D69F00D7D8E6 /* viewControllerCellModel.m */; };
 		533943AD1D1BCA9100C79C77 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 533943AC1D1BCA9100C79C77 /* UIView+Frame.m */; };
+		533943B01D1BD71300C79C77 /* UIWebView+NSURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 533943AF1D1BD71300C79C77 /* UIWebView+NSURLCache.m */; };
 		5344DAEA1D06DC96001E424E /* NavigationViewURLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAE21D06DC96001E424E /* NavigationViewURLHandle.m */; };
 		5344DAEB1D06DC96001E424E /* OtherURLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAE31D06DC96001E424E /* OtherURLHandle.m */; };
 		5344DAED1D06DC96001E424E /* RootBaseNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAE61D06DC96001E424E /* RootBaseNavigator.m */; };
@@ -75,6 +76,8 @@
 		530586F21CF6D69F00D7D8E6 /* viewControllerCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewControllerCellModel.m; sourceTree = "<group>"; };
 		533943AB1D1BCA9100C79C77 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		533943AC1D1BCA9100C79C77 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		533943AE1D1BD71300C79C77 /* UIWebView+NSURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+NSURLCache.h"; sourceTree = "<group>"; };
+		533943AF1D1BD71300C79C77 /* UIWebView+NSURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+NSURLCache.m"; sourceTree = "<group>"; };
 		5344DADD1D06DC96001E424E /* RootBaseNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootBaseNavigator.h; sourceTree = "<group>"; };
 		5344DADF1D06DC96001E424E /* OtherURLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherURLHandle.h; sourceTree = "<group>"; };
 		5344DAE01D06DC96001E424E /* NavigationViewURLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewURLHandle.h; sourceTree = "<group>"; };
@@ -309,6 +312,13 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		533943B11D1CE27500C79C77 /* NSCache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSCache;
+			sourceTree = "<group>";
+		};
 		5344DAEE1D06DD53001E424E /* ViewMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +333,8 @@
 			children = (
 				5344DAF31D07A9D0001E424E /* RootWebViewController.h */,
 				5344DAF41D07A9D0001E424E /* RootWebViewController.m */,
+				533943AE1D1BD71300C79C77 /* UIWebView+NSURLCache.h */,
+				533943AF1D1BD71300C79C77 /* UIWebView+NSURLCache.m */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -350,6 +362,7 @@
 		53DCDE1F1CFB34CC0015BA78 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				533943B11D1CE27500C79C77 /* NSCache */,
 				533943AA1D1BCA6E00C79C77 /* UIView */,
 				53DD64321CFD742C006B41AD /* NSDate */,
 				53DD64331CFD742C006B41AD /* NSDateFormatter */,
@@ -587,6 +600,7 @@
 				530586E51CF6D25F00D7D8E6 /* CellRootDataModel.m in Sources */,
 				530586CE1CF5A34000D7D8E6 /* RootTableViewController.m in Sources */,
 				5344DAED1D06DC96001E424E /* RootBaseNavigator.m in Sources */,
+				533943B01D1BD71300C79C77 /* UIWebView+NSURLCache.m in Sources */,
 				5344DB0A1D07EFD2001E424E /* ViewModel.m in Sources */,
 				530586941CED5A2F00D7D8E6 /* main.m in Sources */,
 				53DD64851CFFE4C0006B41AD /* RootTabBarController.m in Sources */,
