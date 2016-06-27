@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger,UIWebViewCachePolicy)
     
 };
 
-@interface UIWebView_cache:UIWebView 
+@interface UIWebViewCahe:UIWebView
 @property UIWebViewCachePolicy cachePolicy;
 @property (nonatomic,assign)NSInteger memoryCapacity;
 @property (nonatomic,assign)NSInteger diskCapacity;
