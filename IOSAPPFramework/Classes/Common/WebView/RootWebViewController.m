@@ -7,7 +7,6 @@
 //
 
 #import "RootWebViewController.h"
-#import "UIWebView+NSURLCache.h"
 @interface RootWebViewController()
 @property(nonatomic,strong)UIWebView*webView;
 @property(nonatomic,strong)NSURLRequest *urlRequest;
