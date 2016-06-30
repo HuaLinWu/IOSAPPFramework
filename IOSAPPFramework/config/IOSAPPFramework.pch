@@ -16,5 +16,9 @@
 #import "NSDictionary+Category.h"
 #import "NSMutableDictionary+Category.h"
 #import "NSObject+Category.h"
+#import "UIView+Frame.h"
+#import "UIFont+Category.h"
+#import "UIColor+Category.h"
 #import "Base64.h"
+#import "MacroConfig.h"
 #endif /* PrefixHeader_pch */

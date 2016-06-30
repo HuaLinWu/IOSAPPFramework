@@ -38,6 +38,13 @@
     [button setTitle:@"点我" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(200, 200, 50, 50)];
+    label.font = [UIFont systemFontOfPxSize:24];
+    label.text = @"关注";
+    label.textColor = [UIColor colorFromHexRGB:@"818181"];
+    [self.view addSubview:label];
+    
 }
 
 
