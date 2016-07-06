@@ -63,8 +63,8 @@
  */
 
 - (void)loadData:(NSData *)data response:(NSURLResponse *)response request:(NSURLRequest *)request {
-    
-     [self loadData:data MIMEType:response.MIMEType textEncodingName:response.textEncodingName baseURL:request.URL];
+     [self loadData:data MIMEType:response.MIMEType textEncodingName:response.textEncodingName baseURL:response.URL];
+     
 }
 /**
  *  根据requst 来查询缓存然后配置上次的response 的相关的信息来获取配置新的request

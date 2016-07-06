@@ -61,7 +61,7 @@
 //    ViewController *nextVC = [[ViewController alloc] init];
 //    [self.navigationController pushViewController:nextVC  hideBottomBar:YES animated:YES];
     RootWebViewController *nextVC = [[ RootWebViewController alloc] init];
-    nextVC.urlStr = @"http://news.baidu.com";
+    nextVC.urlStr = @"http://api.xiucall.com/eshow/13011112222/0791";
     [self.navigationController pushViewController:nextVC hideBottomBar:YES animated:YES];
 }
 
