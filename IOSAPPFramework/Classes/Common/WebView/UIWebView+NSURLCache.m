@@ -63,8 +63,8 @@
  */
 
 - (void)loadData:(NSData *)data response:(NSURLResponse *)response request:(NSURLRequest *)request {
+    
      [self loadData:data MIMEType:response.MIMEType textEncodingName:response.textEncodingName baseURL:response.URL];
-     
 }
 /**
  *  根据requst 来查询缓存然后配置上次的response 的相关的信息来获取配置新的request
@@ -75,7 +75,7 @@
     if(cachedURLResponseresponse){
      NSHTTPURLResponse *response =(NSHTTPURLResponse *)cachedURLResponseresponse.response;
      NSMutableURLRequest *mutableURLRequest = [[NSMutableURLRequest alloc] initWithURL:request.URL];
-     [mutableURLRequest setValuesForKeysWithDictionary:request.allHTTPHeaderFields];
+     [mutableURLRequest.allHTTPHeaderFields setValuesForKeysWithDictionary:request.allHTTPHeaderFields];
      mutableURLRequest.cachePolicy = request.cachePolicy;
      mutableURLRequest.timeoutInterval      = request.timeoutInterval;
      mutableURLRequest.mainDocumentURL      = request.mainDocumentURL;
@@ -116,9 +116,9 @@
  *  针对request 来存储response
  */
 - (void)storeCacheForRequest:(NSURLRequest *)request response:(NSURLResponse *)response data:(NSData *)responseData{
-    
+    NSURLCache*urlCache = [NSURLCache sharedURLCache];
     NSCachedURLResponse *cachedURLResponse = [[NSCachedURLResponse alloc] initWithResponse:response data:responseData];
-    [[NSURLCache sharedURLCache] storeCachedResponse:cachedURLResponse forRequest:request];
+    [urlCache storeCachedResponse:cachedURLResponse forRequest:request];
 }
 
 /**

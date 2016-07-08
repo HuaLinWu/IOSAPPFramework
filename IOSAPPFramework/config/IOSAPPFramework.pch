@@ -21,4 +21,5 @@
 #import "UIColor+Category.h"
 #import "Base64.h"
 #import "MacroConfig.h"
+#import "DataModel.h"
 #endif /* PrefixHeader_pch */

@@ -34,6 +34,10 @@
 		5344DAFD1D07BC4F001E424E /* AbstractExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAFC1D07BC4F001E424E /* AbstractExpression.m */; };
 		5344DB031D07BE6A001E424E /* AbstractContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DB021D07BE6A001E424E /* AbstractContext.m */; };
 		5344DB0A1D07EFD2001E424E /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DB091D07EFD2001E424E /* ViewModel.m */; };
+		537D8AE21D2E5250007701B9 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE11D2E5250007701B9 /* CoreDataManager.m */; };
+		537D8AE61D2E52F2007701B9 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE51D2E52F2007701B9 /* DataModel.m */; };
+		537D8AEA1D2E584E007701B9 /* PersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE91D2E584E007701B9 /* PersistenceManager.m */; };
+		537D8AEC1D2E7AD9007701B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537D8AEB1D2E7AD9007701B9 /* CoreData.framework */; };
 		53DD64221CFC62CF006B41AD /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD64191CFC62CF006B41AD /* NSArray+Category.m */; };
 		53DD64231CFC62CF006B41AD /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD641C1CFC62CF006B41AD /* NSDictionary+Category.m */; };
 		53DD64241CFC62CF006B41AD /* NSMutableDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD641E1CFC62CF006B41AD /* NSMutableDictionary+Category.m */; };
@@ -103,6 +107,14 @@
 		5344DB021D07BE6A001E424E /* AbstractContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractContext.m; sourceTree = "<group>"; };
 		5344DB081D07EFD2001E424E /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		5344DB091D07EFD2001E424E /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		537D8AE01D2E5250007701B9 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		537D8AE11D2E5250007701B9 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		537D8AE31D2E5285007701B9 /* CoreDataManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManagerProtocol.h; sourceTree = "<group>"; };
+		537D8AE41D2E52F2007701B9 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		537D8AE51D2E52F2007701B9 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		537D8AE81D2E584E007701B9 /* PersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceManager.h; sourceTree = "<group>"; };
+		537D8AE91D2E584E007701B9 /* PersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistenceManager.m; sourceTree = "<group>"; };
+		537D8AEB1D2E7AD9007701B9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		53DD64131CFC465A006B41AD /* IOSAPPFramework.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAPPFramework.pch; sourceTree = "<group>"; };
 		53DD64181CFC62CF006B41AD /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
 		53DD64191CFC62CF006B41AD /* NSArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Category.m"; sourceTree = "<group>"; };
@@ -138,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537D8AEC1D2E7AD9007701B9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +160,7 @@
 		530586861CED5A2F00D7D8E6 = {
 			isa = PBXGroup;
 			children = (
+				537D8AEB1D2E7AD9007701B9 /* CoreData.framework */,
 				530586911CED5A2F00D7D8E6 /* IOSAPPFramework */,
 				530586901CED5A2F00D7D8E6 /* Products */,
 			);
@@ -315,6 +329,10 @@
 		5316B34E1D23E112003A6156 /* StoreManager */ = {
 			isa = PBXGroup;
 			children = (
+				537D8AE01D2E5250007701B9 /* CoreDataManager.h */,
+				537D8AE11D2E5250007701B9 /* CoreDataManager.m */,
+				537D8AE31D2E5285007701B9 /* CoreDataManagerProtocol.h */,
+				537D8AE71D2E583D007701B9 /* PersistenceManager */,
 			);
 			path = StoreManager;
 			sourceTree = "<group>";
@@ -389,8 +407,19 @@
 			children = (
 				5344DB081D07EFD2001E424E /* ViewModel.h */,
 				5344DB091D07EFD2001E424E /* ViewModel.m */,
+				537D8AE41D2E52F2007701B9 /* DataModel.h */,
+				537D8AE51D2E52F2007701B9 /* DataModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		537D8AE71D2E583D007701B9 /* PersistenceManager */ = {
+			isa = PBXGroup;
+			children = (
+				537D8AE81D2E584E007701B9 /* PersistenceManager.h */,
+				537D8AE91D2E584E007701B9 /* PersistenceManager.m */,
+			);
+			path = PersistenceManager;
 			sourceTree = "<group>";
 		};
 		53DCDE1F1CFB34CC0015BA78 /* Category */ = {
@@ -616,6 +645,8 @@
 				530586CB1CF5A31100D7D8E6 /* RootViewController.m in Sources */,
 				53DD64241CFC62CF006B41AD /* NSMutableDictionary+Category.m in Sources */,
 				5344DAEA1D06DC96001E424E /* NavigationViewURLHandle.m in Sources */,
+				537D8AE61D2E52F2007701B9 /* DataModel.m in Sources */,
+				537D8AEA1D2E584E007701B9 /* PersistenceManager.m in Sources */,
 				530586D21CF5A44500D7D8E6 /* RootPlainTableViewAdaptor.m in Sources */,
 				530586EF1CF6D48300D7D8E6 /* ViewController.m in Sources */,
 				5344DAF51D07A9D0001E424E /* RootWebViewController.m in Sources */,
@@ -625,6 +656,7 @@
 				53DD64391CFD7AF5006B41AD /* NSDate+Category.m in Sources */,
 				533943AD1D1BCA9100C79C77 /* UIView+Frame.m in Sources */,
 				53DD64281CFC6349006B41AD /* NSMutableArray+Category.m in Sources */,
+				537D8AE21D2E5250007701B9 /* CoreDataManager.m in Sources */,
 				5344DAF81D07AFD9001E424E /* RootURLBaseHandle.m in Sources */,
 				53DD64361CFD746D006B41AD /* NSDateFormatter+Category.m in Sources */,
 				53DD642C1CFD1D1B006B41AD /* NSString+Category.m in Sources */,

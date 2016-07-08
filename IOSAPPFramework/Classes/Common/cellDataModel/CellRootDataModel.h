@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RootTableViewAdaptorItemBaseProtocol.h"
-@interface CellRootDataModel : NSObject<RootTableViewAdaptorItemBaseProtocol>
+@interface CellRootDataModel :DataModel <RootTableViewAdaptorItemBaseProtocol>
 /**
  *  单元格的类明
  */
