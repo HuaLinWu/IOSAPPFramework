@@ -34,10 +34,15 @@
 		5344DAFD1D07BC4F001E424E /* AbstractExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAFC1D07BC4F001E424E /* AbstractExpression.m */; };
 		5344DB031D07BE6A001E424E /* AbstractContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DB021D07BE6A001E424E /* AbstractContext.m */; };
 		5344DB0A1D07EFD2001E424E /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DB091D07EFD2001E424E /* ViewModel.m */; };
+		5361816A1DAC8E61004D98C7 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 536181691DAC8E61004D98C7 /* NSObject+PerformSelector.m */; };
+		5365AD7F1D61E82F004FF8BC /* URLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365AD7E1D61E82F004FF8BC /* URLRouter.m */; };
+		5365AD821D61E9BF004FF8BC /* URLAnalyzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365AD811D61E9BF004FF8BC /* URLAnalyzing.m */; };
+		5365AD841D63030D004FF8BC /* URLRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365AD831D63030D004FF8BC /* URLRule.m */; };
 		537D8AE21D2E5250007701B9 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE11D2E5250007701B9 /* CoreDataManager.m */; };
 		537D8AE61D2E52F2007701B9 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE51D2E52F2007701B9 /* DataModel.m */; };
 		537D8AEA1D2E584E007701B9 /* PersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE91D2E584E007701B9 /* PersistenceManager.m */; };
 		537D8AEC1D2E7AD9007701B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537D8AEB1D2E7AD9007701B9 /* CoreData.framework */; };
+		5384F4E61D87D4FA00C2338A /* NSObject+KeyedArichiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5384F4E51D87D4FA00C2338A /* NSObject+KeyedArichiver.m */; };
 		53DD64221CFC62CF006B41AD /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD64191CFC62CF006B41AD /* NSArray+Category.m */; };
 		53DD64231CFC62CF006B41AD /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD641C1CFC62CF006B41AD /* NSDictionary+Category.m */; };
 		53DD64241CFC62CF006B41AD /* NSMutableDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD641E1CFC62CF006B41AD /* NSMutableDictionary+Category.m */; };
@@ -107,6 +112,13 @@
 		5344DB021D07BE6A001E424E /* AbstractContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractContext.m; sourceTree = "<group>"; };
 		5344DB081D07EFD2001E424E /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		5344DB091D07EFD2001E424E /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		536181681DAC8E61004D98C7 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
+		536181691DAC8E61004D98C7 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
+		5365AD7D1D61E82F004FF8BC /* URLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLRouter.h; sourceTree = "<group>"; };
+		5365AD7E1D61E82F004FF8BC /* URLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRouter.m; sourceTree = "<group>"; };
+		5365AD801D61E9BF004FF8BC /* URLAnalyzing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLAnalyzing.h; sourceTree = "<group>"; };
+		5365AD811D61E9BF004FF8BC /* URLAnalyzing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLAnalyzing.m; sourceTree = "<group>"; };
+		5365AD831D63030D004FF8BC /* URLRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRule.m; sourceTree = "<group>"; };
 		537D8AE01D2E5250007701B9 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		537D8AE11D2E5250007701B9 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		537D8AE31D2E5285007701B9 /* CoreDataManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManagerProtocol.h; sourceTree = "<group>"; };
@@ -115,6 +127,8 @@
 		537D8AE81D2E584E007701B9 /* PersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceManager.h; sourceTree = "<group>"; };
 		537D8AE91D2E584E007701B9 /* PersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistenceManager.m; sourceTree = "<group>"; };
 		537D8AEB1D2E7AD9007701B9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5384F4E41D87D4FA00C2338A /* NSObject+KeyedArichiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KeyedArichiver.h"; sourceTree = "<group>"; };
+		5384F4E51D87D4FA00C2338A /* NSObject+KeyedArichiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KeyedArichiver.m"; sourceTree = "<group>"; };
 		53DD64131CFC465A006B41AD /* IOSAPPFramework.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSAPPFramework.pch; sourceTree = "<group>"; };
 		53DD64181CFC62CF006B41AD /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
 		53DD64191CFC62CF006B41AD /* NSArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Category.m"; sourceTree = "<group>"; };
@@ -212,6 +226,7 @@
 		530586C51CF5A21C00D7D8E6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5365AD7C1D61E806004FF8BC /* URL路由器功能 */,
 				53DCDE231CFB3F0D0015BA78 /* Swizzing */,
 				53DCDE1F1CFB34CC0015BA78 /* Category */,
 				530586C61CF5A21C00D7D8E6 /* Common */,
@@ -413,6 +428,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5365AD7C1D61E806004FF8BC /* URL路由器功能 */ = {
+			isa = PBXGroup;
+			children = (
+				5365AD7D1D61E82F004FF8BC /* URLRouter.h */,
+				5365AD7E1D61E82F004FF8BC /* URLRouter.m */,
+				5365AD801D61E9BF004FF8BC /* URLAnalyzing.h */,
+				5365AD811D61E9BF004FF8BC /* URLAnalyzing.m */,
+				5365AD831D63030D004FF8BC /* URLRule.m */,
+			);
+			path = "URL路由器功能";
+			sourceTree = "<group>";
+		};
 		537D8AE71D2E583D007701B9 /* PersistenceManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +500,10 @@
 			children = (
 				53DD64201CFC62CF006B41AD /* NSObject+Category.h */,
 				53DD64211CFC62CF006B41AD /* NSObject+Category.m */,
+				5384F4E41D87D4FA00C2338A /* NSObject+KeyedArichiver.h */,
+				5384F4E51D87D4FA00C2338A /* NSObject+KeyedArichiver.m */,
+				536181681DAC8E61004D98C7 /* NSObject+PerformSelector.h */,
+				536181691DAC8E61004D98C7 /* NSObject+PerformSelector.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -638,6 +669,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5361816A1DAC8E61004D98C7 /* NSObject+PerformSelector.m in Sources */,
+				5384F4E61D87D4FA00C2338A /* NSObject+KeyedArichiver.m in Sources */,
 				530586971CED5A2F00D7D8E6 /* AppDelegate.m in Sources */,
 				53DD646C1CFEC5AD006B41AD /* UIViewController+Keyboard.m in Sources */,
 				5344DAEB1D06DC96001E424E /* OtherURLHandle.m in Sources */,
@@ -653,6 +686,7 @@
 				530586F01CF6D48300D7D8E6 /* textCell.m in Sources */,
 				53DD64711CFEC5D6006B41AD /* Base64.m in Sources */,
 				53DD64251CFC62CF006B41AD /* NSObject+Category.m in Sources */,
+				5365AD821D61E9BF004FF8BC /* URLAnalyzing.m in Sources */,
 				53DD64391CFD7AF5006B41AD /* NSDate+Category.m in Sources */,
 				533943AD1D1BCA9100C79C77 /* UIView+Frame.m in Sources */,
 				53DD64281CFC6349006B41AD /* NSMutableArray+Category.m in Sources */,
@@ -660,10 +694,12 @@
 				5344DAF81D07AFD9001E424E /* RootURLBaseHandle.m in Sources */,
 				53DD64361CFD746D006B41AD /* NSDateFormatter+Category.m in Sources */,
 				53DD642C1CFD1D1B006B41AD /* NSString+Category.m in Sources */,
+				5365AD841D63030D004FF8BC /* URLRule.m in Sources */,
 				5344DAFD1D07BC4F001E424E /* AbstractExpression.m in Sources */,
 				5344DB031D07BE6A001E424E /* AbstractContext.m in Sources */,
 				53DD64221CFC62CF006B41AD /* NSArray+Category.m in Sources */,
 				530586A01CED5A2F00D7D8E6 /* IOSAPPFramework.xcdatamodeld in Sources */,
+				5365AD7F1D61E82F004FF8BC /* URLRouter.m in Sources */,
 				53DD64231CFC62CF006B41AD /* NSDictionary+Category.m in Sources */,
 				530586E51CF6D25F00D7D8E6 /* CellRootDataModel.m in Sources */,
 				530586CE1CF5A34000D7D8E6 /* RootTableViewController.m in Sources */,
