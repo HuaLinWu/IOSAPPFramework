@@ -44,8 +44,8 @@
     label.text = @"关注";
     label.textColor = [UIColor colorFromHexRGB:@"818181"];
     [self.view addSubview:label];
-   NSArray *array = [self performSelector:@selector(method1:agrument1:agrument2:agrument3:) withMutableObject:@1,@2,@3,@4];
-    [self performSelectorInBackground:<#(nonnull SEL)#> withObject:<#(nullable id)#>]
+   
+   
 }
 
 
@@ -54,13 +54,7 @@
     [super viewWillAppear:animated];
    
 }
-- (NSArray *)method1:(id)a agrument1:(id)b agrument2:(id)c agrument3:(id)d{
-    NSLog(@"----a--->%i",[a integerValue]);
-    NSLog(@"---b---->%i",[b integerValue]);
-    NSLog(@"----c--->%i",[c integerValue]);
-    NSLog(@"----d--->%i",[d integerValue]);
-    return [NSArray array];
-}
+
 - (void)buttonClick:(UIButton *)button
 {
 //    RootAlertView *alert = [[RootAlertView alloc] init];

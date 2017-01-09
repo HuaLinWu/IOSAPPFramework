@@ -34,10 +34,12 @@
 		5344DAFD1D07BC4F001E424E /* AbstractExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DAFC1D07BC4F001E424E /* AbstractExpression.m */; };
 		5344DB031D07BE6A001E424E /* AbstractContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DB021D07BE6A001E424E /* AbstractContext.m */; };
 		5344DB0A1D07EFD2001E424E /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344DB091D07EFD2001E424E /* ViewModel.m */; };
+		53521C2C1E237D2F00754541 /* UIControl+ThrottleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 53521C2B1E237D2F00754541 /* UIControl+ThrottleEvent.m */; };
 		5361816A1DAC8E61004D98C7 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 536181691DAC8E61004D98C7 /* NSObject+PerformSelector.m */; };
 		5365AD7F1D61E82F004FF8BC /* URLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365AD7E1D61E82F004FF8BC /* URLRouter.m */; };
 		5365AD821D61E9BF004FF8BC /* URLAnalyzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365AD811D61E9BF004FF8BC /* URLAnalyzing.m */; };
 		5365AD841D63030D004FF8BC /* URLRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365AD831D63030D004FF8BC /* URLRule.m */; };
+		5365F98C1DE5454E007DA9C5 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5365F98B1DE5454E007DA9C5 /* UncaughtExceptionHandler.m */; };
 		537D8AE21D2E5250007701B9 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE11D2E5250007701B9 /* CoreDataManager.m */; };
 		537D8AE61D2E52F2007701B9 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE51D2E52F2007701B9 /* DataModel.m */; };
 		537D8AEA1D2E584E007701B9 /* PersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537D8AE91D2E584E007701B9 /* PersistenceManager.m */; };
@@ -112,6 +114,8 @@
 		5344DB021D07BE6A001E424E /* AbstractContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractContext.m; sourceTree = "<group>"; };
 		5344DB081D07EFD2001E424E /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		5344DB091D07EFD2001E424E /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		53521C2A1E237D2F00754541 /* UIControl+ThrottleEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ThrottleEvent.h"; sourceTree = "<group>"; };
+		53521C2B1E237D2F00754541 /* UIControl+ThrottleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ThrottleEvent.m"; sourceTree = "<group>"; };
 		536181681DAC8E61004D98C7 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
 		536181691DAC8E61004D98C7 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
 		5365AD7D1D61E82F004FF8BC /* URLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLRouter.h; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 		5365AD801D61E9BF004FF8BC /* URLAnalyzing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLAnalyzing.h; sourceTree = "<group>"; };
 		5365AD811D61E9BF004FF8BC /* URLAnalyzing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLAnalyzing.m; sourceTree = "<group>"; };
 		5365AD831D63030D004FF8BC /* URLRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRule.m; sourceTree = "<group>"; };
+		5365F98A1DE5454E007DA9C5 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		5365F98B1DE5454E007DA9C5 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		537D8AE01D2E5250007701B9 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		537D8AE11D2E5250007701B9 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		537D8AE31D2E5285007701B9 /* CoreDataManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManagerProtocol.h; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 		530586C61CF5A21C00D7D8E6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5365F9891DE5453E007DA9C5 /* UncaughtExceptionHandler */,
 				5316B34E1D23E112003A6156 /* StoreManager */,
 				5344DB071D07EFC1001E424E /* Model */,
 				5344DAFA1D07BC27001E424E /* 解释器 */,
@@ -428,6 +435,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		53521C291E237BAC00754541 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				53521C2A1E237D2F00754541 /* UIControl+ThrottleEvent.h */,
+				53521C2B1E237D2F00754541 /* UIControl+ThrottleEvent.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
 		5365AD7C1D61E806004FF8BC /* URL路由器功能 */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +454,15 @@
 				5365AD831D63030D004FF8BC /* URLRule.m */,
 			);
 			path = "URL路由器功能";
+			sourceTree = "<group>";
+		};
+		5365F9891DE5453E007DA9C5 /* UncaughtExceptionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				5365F98A1DE5454E007DA9C5 /* UncaughtExceptionHandler.h */,
+				5365F98B1DE5454E007DA9C5 /* UncaughtExceptionHandler.m */,
+			);
+			path = UncaughtExceptionHandler;
 			sourceTree = "<group>";
 		};
 		537D8AE71D2E583D007701B9 /* PersistenceManager */ = {
@@ -452,6 +477,7 @@
 		53DCDE1F1CFB34CC0015BA78 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				53521C291E237BAC00754541 /* UIControl */,
 				5316B3541D24CA41003A6156 /* UIColor */,
 				5316B3501D24B6D2003A6156 /* UIFont */,
 				533943B11D1CE27500C79C77 /* NSCache */,
@@ -680,12 +706,14 @@
 				5344DAEA1D06DC96001E424E /* NavigationViewURLHandle.m in Sources */,
 				537D8AE61D2E52F2007701B9 /* DataModel.m in Sources */,
 				537D8AEA1D2E584E007701B9 /* PersistenceManager.m in Sources */,
+				5365F98C1DE5454E007DA9C5 /* UncaughtExceptionHandler.m in Sources */,
 				530586D21CF5A44500D7D8E6 /* RootPlainTableViewAdaptor.m in Sources */,
 				530586EF1CF6D48300D7D8E6 /* ViewController.m in Sources */,
 				5344DAF51D07A9D0001E424E /* RootWebViewController.m in Sources */,
 				530586F01CF6D48300D7D8E6 /* textCell.m in Sources */,
 				53DD64711CFEC5D6006B41AD /* Base64.m in Sources */,
 				53DD64251CFC62CF006B41AD /* NSObject+Category.m in Sources */,
+				53521C2C1E237D2F00754541 /* UIControl+ThrottleEvent.m in Sources */,
 				5365AD821D61E9BF004FF8BC /* URLAnalyzing.m in Sources */,
 				53DD64391CFD7AF5006B41AD /* NSDate+Category.m in Sources */,
 				533943AD1D1BCA9100C79C77 /* UIView+Frame.m in Sources */,
